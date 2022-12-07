@@ -12,18 +12,17 @@ The ETL process of Extraction, Transformation and Loading hence forms an integra
 
 # Objective of the project: 
 ### To determine the factors influening the UK Road Traffic Collision and Accident. 
-Owing to the advancement of infrastructure within the transport industry with regards to the technologies within the cars and the road conditions, casualties resulting from the road traffic collision has consistently seen a downward trend (since the 1960s). 
-However, still a substantial number of road traffic collision and accident do occur and they result in serious/fatal consequences. 
+Since the 1960s, the advancement of infrastructure within the transport industry with regards to the technologies within the cars and the road conditions have been evident. This has positively resulted in downward trend in road traffic collisions and accidents. However, still a substantial number of road traffic accidents do still occur and they can result in serious/fatal consequences. 
 
 #### Data Extraction
-In order to determine what factors influenceing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details were sourced from (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). These cleaned datasets were initally obtained from the Department of Transport (UK) for the period 2005-2017  The accident dataset contains extensive information detailing the collision and accident alongside the weather and road condition. The vehicle dataset gives details of the vehicle involved in the collision along with driver information and vehicle manoevore that resulted in the collision.
+In order to determine what factors are influencing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details were sourced from (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). These datasets were initally obtained from the Department of Transport (UK) for the period 2005-2017.  The accident dataset contains extensive information detailing the collision and accident alongside the weather and road condition. The vehicle dataset however, gives details of the vehicle involved in the collision along with driver information and vehicle manoevore that resulted in the collision.
 
 The datasets used in this project exceeded the size limit of GitHub, hence couldnt upload the files to this repository. Instead the link to the datasets are provided if you need to access them.
 
 #### Data transformation
-After gathering initial requiremments of the data analysis team who will determining the relationship of the accident in relation to the 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
+After gathering initial requirements of the data analysis team who will determining the relationship of the accident in relation to the 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
    
-   (a) Unneccessary colums that were not part of the data analysis requirement were taken out 
+   (a) Unneccessary columns that were not part of the data analysis requirement were taken out 
    
    (b) The column names of the two data files were simplified and renamed 
    

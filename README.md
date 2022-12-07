@@ -23,14 +23,20 @@ The datasets used in this project exceeded the size limit of GitHub, hence could
 
 ### Data transformation
 After gathering initial requirements from the data analysis team who will determining the relationship of the accident to factors such as 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
-   (a) Unneccessary columns that were not part of the data analysis requirement were taken out 
+   (a) Unneccessary columns that were not part of the data analysis requirement were taken out
+   
    (b) The column names of the two data files were simplified and renamed 
+   
    (c) Rows with missing data were taken out
+   
    (d) Unique value counts of columns were determined and 'Not known' & 'Data missing or out of range' were taken out from the data file.
+   
    (e) Accident file had (1048575 rows × 34 columns) values and after the cleaning process we had (1026974 rows × 6 columns) value counts.
        The column names included in the cleaned accident file are id, accident_severity, day_of_week, Speed_Limit, Road_Conditions, and weather_Conditions
+       
    (f) Vehicle file had (2177205 rows × 24 columns) values and after the cleaning process we had (1517856 rows × 6 columns) value counts.
        The column names included in the cleaned accident file are id, driver_Age, vehicle_Age, make, model, driver_sex and Vehicle_Manoeuvre
+       
    (g) The clean pandas dataframes were uploaded to postgresql (use case 1) and MongoDB (use case 2).
    
 

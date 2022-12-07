@@ -5,7 +5,7 @@ This is an ETL project where a dataset is sourced, transformed (cleaned) and loa
 After loading, the stored database can then be accessed/queried to analyse, derive insights in order to solve the initial business use case successfully. 
 
 ### ETL
-The ETL process of Extraction, Transformation and Loading; hence forms an integral part of the entire data pipeline.
+The ETL process of Extraction, Transformation and Loading hence forms an integral part of the entire data pipeline.
 
 ![ETL](https://webassets.mongodb.com/_com_assets/cms/ETL_Visual-sa656kl6df.png)
 
@@ -16,32 +16,36 @@ The ETL process of Extraction, Transformation and Loading; hence forms an integr
 Owing to the advancement of infrastructure within the transport industry with regards to the technologies within the cars and the road conditions, casualties resulting from the road traffic collision has consistently seen a downward trend (since the 1960s). 
 However, still a substantial number of road traffic collision and accident do occur and they result in serious/fatal consequences. 
 
-In order to determine what factors are influenceing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details was sourced from the Department of Transport (UK) for the period of 2005-2017 (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). The datasets obtainable from the Department of Transport contains extensive information detailing the collision and accident in addition to the weather and road condition.
+#### Data Extraction
+In order to determine what factors influenceing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details were sourced from (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). These cleaned datasets were initally obtained from the Department of Transport (UK) for the period 2005-2017  The accident dataset contains extensive information detailing the collision and accident alongside the weather and road condition. The vehicle dataset gives details of the vehicle involved in the collision along with driver information and vehicle manoevore that resulted in the collision.
 
-The data analysis project will determine the relationship of accident with regards to 
+The datasets used in this project exceeded the size limit of GitHub, hence couldnt upload the files to this repository. Instead the link to the datasets are provided if you need to access them.
 
+#### Data transformation
+After gathering initial requiremments of the data analysis team who will determining the relationship of the accident in relation to the 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
+   
+   (a) Unneccessary colums that were not part of the data analysis requirement were taken out 
+   
+   (b) The column names of the two data files were simplified and renamed 
+   
+   (c) Rows with missing data were taken out.
+   
+   (d) Unique value counts of columns were determined and 'Not known' & 'Data missing or out of range' were taken from the data file.
+   
+   (e) Accident file had (1048575 rows × 34 columns) values and after the cleaning process we had (1026974 rows × 6 columns) value counts.
+       The column names included in the cleaned accident file - id, accident_severity, day_of_week, Speed_Limit, Road_Conditions, and weather_Conditions
+   
+   (f) Vehicle file had (2177205 rows × 24 columns) values and after the cleaning process we had (1517856 rows × 6 columns) value counts.
+       The column names included in the cleaned accident file - id, driver_Age, vehicleAge, make, model, driver_sex and Vehicle_Manoeuvre
+       
+   (g) The clean pandas dataframes were uploaded to postgresql and MongoDB.
+   
 
-As a data engineer for the goverment transport department (hypothetical), i was required to work on a project to determine from any correlation between 'driver_age' and 'accident severity'
+# Entity Relationship Diagram (ERD)-
 
+The CSV files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
 
-UK RTCs which have resulted in a persons death have been on a downward trend since the 1960s – however in 2020 1,516 people lost their lives on UK roads. The UK road systems, especially in Liverpool, are dated which means they have not been upgraded to reflect the increase of cars on the road. This means there are still preventative measures that could be implemented to prevent even more deaths on UK roads.
-
-The UK government compiles and disseminates extensive data about road incidents around the nation (often once per year). This data is particularly fascinating and thorough for analysis and research because it contains, but is not limited to, geographic areas, weather conditions, vehicle types, casualty numbers, and vehicle manoeuvres.
-
-The data come from the Open Data website of the UK government, where they have been published by the Department of Transport.
-
-The dataset comprises of two csv files:
-    
-    (b) Is there any correlation between 'vehicle_age' and 'accident severity'
-    
-    (c) Is there any correlation between 'driver_sex' and 'accident severity'
-    
-    (d) Is there any correlation between 'model' and 'make'(indicating the vehicle size and type indirectly) and 'accident severity'
-    
-    (e) Is there any correlation between 'weather conditions' and 'accident severity'
-    
-    (f) Is there any correlation between 'day of the week' and 'accident severity'
-
+![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/ERD%20diagram%202.png)
 
 
 
@@ -61,10 +65,6 @@ After sourcing the dataset, we transformed the data and uploaded to the Postgres
    
    (d) Hence, we have provided the link to the datasets - https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset
    
-# Extract Transform Load (ETL) Pipeline - 
-The ETL Pipeline employed for this project is presented as follows - 
-
-![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/ETL%20Diagram.png)
 
 # Entity Relationship Diagram (ERD)-
 

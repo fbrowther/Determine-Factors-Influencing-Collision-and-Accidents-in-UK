@@ -19,7 +19,7 @@ Since the 1960s, the advancement of infrastructure within the transport industry
 #### Data Extraction
 In order to determine what factors are influencing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details were sourced from (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). These datasets were initally obtained from the Department of Transport (UK) for the period 2005-2017.  The accident dataset contains extensive information detailing the collision and accident alongside the weather and road condition. The vehicle dataset however, gives details of the vehicle involved in the collision along with driver information and vehicle manoevore that resulted in the collision.
 
-The datasets used in this project exceeded the size limit of GitHub, hence couldnt upload the files to this repository. Instead the link to the datasets are provided if you need to access them.
+The datasets used in this project exceeded the size limit of GitHub, hence couldnt upload the files to this repository. Instead the link to the datasets are provided if they need to be accessed.
 
 #### Data transformation
 After gathering initial requirements of the data analysis team who will determining the relationship of the accident to factors such as 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.

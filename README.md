@@ -22,7 +22,7 @@ In order to determine what factors are influencing the road traffic collision an
 The datasets used in this project exceeded the size limit of GitHub, hence couldnt upload the files to this repository. Instead the link to the datasets are provided if they need to be accessed.
 
 ### Data transformation
-After gathering initial requirements of the data analysis team who will determining the relationship of the accident to factors such as 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
+After gathering initial requirements from the data analysis team who will determining the relationship of the accident to factors such as 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
    
    (a) Unneccessary columns that were not part of the data analysis requirement were taken out 
    

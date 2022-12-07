@@ -9,4 +9,4 @@ The ETL process of Extraction, Transformation and Loading; hence forms an integr
 
 ![ETL](https://webassets.mongodb.com/_com_assets/cms/ETL_Visual-sa656kl6df.png)
 
-(The current ETL image sourced from MongoDB.com)
+(The current ETL image was sourced from MongoDB.com)

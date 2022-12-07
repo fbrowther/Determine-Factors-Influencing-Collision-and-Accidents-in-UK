@@ -45,7 +45,7 @@ After gathering initial requiremments of the data analysis team who will determi
 
 The CSV files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
 
-![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/ERD%20diagram%202.png)
+![alt text](https://github.com/fbrowther/Project-2/blob/main/ERD%20diagram.png)
 
 
 

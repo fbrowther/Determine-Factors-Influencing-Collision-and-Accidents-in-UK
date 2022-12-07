@@ -71,15 +71,15 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 Database tables 'accident_data' and 'vehicle_data' could be joined (FULL JOIN) at the primary key id and the relationship of traffic collision to 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc could be deteremined.
 
 # Use case 2: 
-If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the factors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') influence traffic collision/accident can be still determined by employing a non-relational database, MongoDB.
+If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the factors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') influence traffic collision/accident by employing a non-relational database, MongoDB.
 
 ### Data Engineering 
 The cleaned datasets were converted to python dictionary using to_dict('records') function. This converts the pandans dataframe to a dictionary in order to upload the data to MongoDB
 
-Employing pymongo.MongoClient function, a connection to MongoDB compass was established and a database called Accident_db was created. Withinin this database two collections called - 'accident_data' and 'vehicle_data' were created to store the accident_data and vehicle_data dictionaries.
+Employing pymongo.MongoClient function, a connection to MongoDB compass was established and a database called Accident_db was created. Within this database two collections called - 'accident_data' and 'vehicle_data' were created to store the accident_data and vehicle_data dictionaries.
 
 ### MongoDB
-MongoDB is a non-relational database to archive data, retrive, manipulate and query data. A non-relational database is a database that does not use the tabular schema of rows and columns (which are found in most traditional database systems) to store data. 
+MongoDB is a non-relational database to archive, retrive, manipulate and query data. A non-relational database is a database that does not use the tabular schema of rows and columns to store data. 
 
 Employing 'table.insert_many(data_dict)' function the cleaned dictionary was uploaded to the respective collections. The successful loading of the database is shown by these screenshots.
 

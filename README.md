@@ -11,8 +11,37 @@ The ETL process of Extraction, Transformation and Loading; hence forms an integr
 
 (The current ETL image was sourced from MongoDB.com)
 
-# Use case 1 - 
-Objective : Being a data engineer for a 
+# Objective of the project - 
+### To determine the factors influening the UK Road Traffic Collision and Accident. 
+Owing to the advanced infrastructure within the transport industry both with regards to the technologies within the cars and the road condition, casualties resulting from the road traffic collision and accident has consistently shown a downward trent since the 1960s. However, still a substantial number of Road Traffic Collision and Accident do occur and result in more serious/fatal consequences. 
+
+In order to determine what factors are influenceing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details was sourced from the Department of Transport (UK) for the period of 2005-2017 (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). The datasets obtainable from the Department of Transport contains extensive information detailing the collision and accident in addition to the weather and road condition.
+
+The data analysis project will determine the relationship of accident with regards to 
+
+
+As a data engineer for the goverment transport department (hypothetical), i was required to work on a project to determine from any correlation between 'driver_age' and 'accident severity'
+
+
+UK RTCs which have resulted in a persons death have been on a downward trend since the 1960s – however in 2020 1,516 people lost their lives on UK roads. The UK road systems, especially in Liverpool, are dated which means they have not been upgraded to reflect the increase of cars on the road. This means there are still preventative measures that could be implemented to prevent even more deaths on UK roads.
+
+The UK government compiles and disseminates extensive data about road incidents around the nation (often once per year). This data is particularly fascinating and thorough for analysis and research because it contains, but is not limited to, geographic areas, weather conditions, vehicle types, casualty numbers, and vehicle manoeuvres.
+
+The data come from the Open Data website of the UK government, where they have been published by the Department of Transport.
+
+The dataset comprises of two csv files:
+    
+    (b) Is there any correlation between 'vehicle_age' and 'accident severity'
+    
+    (c) Is there any correlation between 'driver_sex' and 'accident severity'
+    
+    (d) Is there any correlation between 'model' and 'make'(indicating the vehicle size and type indirectly) and 'accident severity'
+    
+    (e) Is there any correlation between 'weather conditions' and 'accident severity'
+    
+    (f) Is there any correlation between 'day of the week' and 'accident severity'
+
+
 
 
 # Use case 2 - 

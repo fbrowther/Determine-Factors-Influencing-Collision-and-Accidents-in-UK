@@ -1,7 +1,7 @@
 # Project-2
 
 ### Brief Introduction
-This is an ETL project. As a part of this project, it is required to extract, transform and load the cleaned data onto a database. Either a relational database such as PostgreSQL or non-relational database (MongoDB) can be chosen depending on the use case and the relationship of the data that exist within this dataset. After loading, the stored database can then be accessed/queried by the relevant personel to analyse and derive insights to solve the business problem successfully. 
+This is an ETL project. As a part of this project, it was required to extract, transform and load the cleaned data onto a database. Either a relational database such as PostgreSQL or non-relational database (MongoDB) can be chosen depending on the use case and the relationship of the data that exist within this dataset. After loading, the stored database can then be accessed and queried to analyse and derive insights to solve the business problem successfully. 
 
 ### ETL
 The ETL process of Extraction, Transformation and Loading hence forms an integral part of the entire data pipeline.

@@ -30,7 +30,7 @@ After gathering initial requirements from the data analysis team who will determ
    
    (c) Rows with missing data were taken out.
    
-   (d) Unique value counts of columns were determined and 'Not known' & 'Data missing or out of range' were taken from the data file.
+   (d) Unique value counts of columns were determined and 'Not known' & 'Data missing or out of range' were taken out from the data file.
    
    (e) Accident file had (1048575 rows × 34 columns) values and after the cleaning process we had (1026974 rows × 6 columns) value counts.
        The column names included in the cleaned accident file - id, accident_severity, day_of_week, Speed_Limit, Road_Conditions, and weather_Conditions

@@ -82,29 +82,10 @@ MongoDB is a non-relational database to archive data, retrive, manipulate and qu
 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Mongodb/accident_data.png)
 
-![alt text]()
-
-
+![alt text](https://github.com/fbrowther/Project-2/blob/main/Mongodb/vehicle_data.png)
 
 # Conclusions -
-  As a part of this project, we were able to successfully extract, transform and load the data onto the relational database, Postgresql for further analysis by the Data Analytics team. 
-
-# Future work suggestions -
-  The database tables 'accident' and 'vehicle' could be joined (FULL JOIN) at the primary key id (accident index) and the following queries could be performed -
-    
-    (a) Is there any correlation between 'driver_age' and 'accident severity'
-    
-    (b) Is there any correlation between 'vehicle_age' and 'accident severity'
-    
-    (c) Is there any correlation between 'driver_sex' and 'accident severity'
-    
-    (d) Is there any correlation between 'model' and 'make'(indicating the vehicle size and type indirectly) and 'accident severity'
-    
-    (e) Is there any correlation between 'weather conditions' and 'accident severity'
-    
-    (f) Is there any correlation between 'day of the week' and 'accident severity'
-
-
+As a part of this project, The dataset was successfully extracted, transformed and load the data onto both the relational database, Postgresql and non-relational database MongoDB for further analysis by the Data Analytics team. 
 
 
 

@@ -56,7 +56,6 @@ Using the provided information, we created table schema for each of the cleaned 
 ID (accident_index) was chosen as the primary key for the 'accident_data' table. 
 ID (accident_index) of the multiple vehicle involved in collision was the foreign_key for the 'vehicle_data' table.
 
-
 # Loading of the data onto Postgresql - 
 The cleaned dataframe were loaded onto the respective empty tables in Postgresql after establishing connection by creating an engine. The details are included in the Analysisfinal.ipynb file (https://github.com/fbrowther/Project-2/blob/main/AnalysisFinal.ipynb) 
 
@@ -64,7 +63,8 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/accident_data.png)
 
-![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/Postgresql%20/Vehicle.png)
+![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/vehicle_data.png)
+
 
 # Use case 2 - 
 

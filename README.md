@@ -69,12 +69,12 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 
 
 # Use case 2: 
-If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the facors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') strongly influence traffic collision/accident could still be deteremined employing non-relational database MongoDB.
+If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the factors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') influence traffic collision/accident can be still determined by employing a non-relational database, MongoDB.
 
 ### Data Engineering 
 The cleaned datasets were converted to python dictionary using to_dict('records') function. This converts the pandans dataframe to a dictionary in order to upload the data to MongoDB
 
-Employing pymongo.MongoClient fucntion, a connection to MongoDB compass was established and a database called Accident_db was created. withinin this databse two collections called - 'accident_data' and 'vehicle_data' were created to store the accident_data and vehicle_data dictionaries.
+Employing pymongo.MongoClient function, a connection to MongoDB compass was established and a database called Accident_db was created. Withinin this database two collections called - 'accident_data' and 'vehicle_data' were created to store the accident_data and vehicle_data dictionaries.
 
 ### MongoDB
 MongoDB is a non-relational database to archive data, retrive, manipulate and query data. A non-relational database is a database that does not use the tabular schema of rows and columns (which are found in most traditional database systems) to store data. 
@@ -87,7 +87,7 @@ Employing 'table.insert_many(data_dict)' function the cleaned dictionary was upl
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Mongodb/vehicle_data.png)
 
 # Conclusions
-As a part of this project, project dataset was successfully extracted, transformed and loaded onto both the relational database, Postgresql and non-relational database MongoDB for further analysis by the Data Analytics team. 
+As a part of this project, datasets were successfully extracted, transformed and loaded onto both the relational database, Postgresql and non-relational database MongoDB for further analysis by the Data Analytics team. 
 
 
 

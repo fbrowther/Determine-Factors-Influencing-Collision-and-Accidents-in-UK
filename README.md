@@ -62,7 +62,7 @@ The cleaned dataframe were loaded onto the respective empty tables in Postgresql
 
 The successful uploading of the data was confirmed by the (SELECT * FROM accident_data/vehicle_data) query and the secreenshots included below display the same-
 
-![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/Postgresql%20/Accident.png)
+![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/accident_data.png)
 
 ![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/Postgresql%20/Vehicle.png)
 

@@ -13,7 +13,8 @@ The ETL process of Extraction, Transformation and Loading; hence forms an integr
 
 # Objective of the project - 
 ### To determine the factors influening the UK Road Traffic Collision and Accident. 
-Owing to the advanced infrastructure within the transport industry both with regards to the technologies within the cars and the road condition, casualties resulting from the road traffic collision and accident has consistently shown a downward trent since the 1960s. However, still a substantial number of Road Traffic Collision and Accident do occur and result in more serious/fatal consequences. 
+Owing to the advancement of infrastructure within the transport industry with regards to the technologies within the cars and the road conditions, casualties resulting from the road traffic collision has consistently seen a downward trend (since the 1960s). 
+However, still a substantial number of road traffic collision and accident do occur and they result in serious/fatal consequences. 
 
 In order to determine what factors are influenceing the road traffic collision and accident, two CSV datafiles consisting of accident and vehicle details was sourced from the Department of Transport (UK) for the period of 2005-2017 (https://www.kaggle.com/datasets/salmankhaliq22/road-traffic-collision-dataset). The datasets obtainable from the Department of Transport contains extensive information detailing the collision and accident in addition to the weather and road condition.
 

@@ -48,7 +48,7 @@ The CSV files were inspected and ERD diagram of the two datasets were sketched o
 
 ### Working with Relational database to determine the factors influecing UK road traffic collision and accident
 Since there exist a relationship between the accident and vehicle dataset with ID (accident_index) being common between the two, it was obvious to upload 
-the clean dataset to PostgreSQL which is a relational database. Employing PostgreSQL, database tables 'accident_data' and 'vehicle_data' could be joined (FULL JOIN) at the primary key id and the relationship of traffic collision to 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc could be deteremined.
+the clean dataset to PostgreSQL which is a relational database. 
 
 ### Data Engineering 
 Database 'Accident_db' was created on Postgresql followed by creating two tables namely - Accident and Vehicle with required column names. 
@@ -57,6 +57,7 @@ Using the provided information, we created table schema for each of the cleaned 
 
 ID (accident_index) was chosen as the primary key for the 'accident_data' table. 
 ID (accident_index) of the multiple vehicle involved in collision was the foreign_key for the 'vehicle_data' table.
+
 
 ### Uploading data onto PostgreSQL - 
 The cleaned dataframe were loaded onto the respective empty tables in Postgresql after establishing connection by creating an engine. The details are included in the Analysisfinal.ipynb file (https://github.com/fbrowther/Project-2/blob/main/AnalysisFinal.ipynb) 
@@ -67,6 +68,8 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/vehicle_data.png)
 
+### Data Analysis
+Database tables 'accident_data' and 'vehicle_data' could be joined (FULL JOIN) at the primary key id and the relationship of traffic collision to 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc could be deteremined.
 
 # Use case 2: 
 If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the factors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') influence traffic collision/accident can be still determined by employing a non-relational database, MongoDB.

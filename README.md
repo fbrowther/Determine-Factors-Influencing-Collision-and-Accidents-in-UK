@@ -42,7 +42,7 @@ After gathering initial requirements from the data analysis team who will determ
 
 # Use case 1: 
 ### Entity Relationship Diagram (ERD)
-The CSV files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
+The cleaned data files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/ERD%20diagram.png)
 
 ### Working with Relational database to determine the factors influecing UK road traffic collision and accident

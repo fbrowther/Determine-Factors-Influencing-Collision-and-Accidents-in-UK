@@ -80,7 +80,7 @@ Employing pymongo.MongoClient fucntion, a connection to MongoDB compass was esta
 MongoDB is a non-relational database to archive data, retrive, manipulate and query data. Employing 'table.insert_many(data_dict)' function the cleaned dictionary was uploaded to the respective collections. The successful loading of the database is shown by these screenshots.
 
 
-![alt text]()
+![alt text](https://github.com/fbrowther/Project-2/blob/main/Mongodb/accident_data.png)
 
 ![alt text]()
 

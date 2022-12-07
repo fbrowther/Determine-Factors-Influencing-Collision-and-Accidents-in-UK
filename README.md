@@ -11,7 +11,7 @@ The ETL process of Extraction, Transformation and Loading hence forms an integra
 (The current ETL image was sourced from MongoDB.com)
 
 # Objective of the project: 
-### To determine the factors influening the UK Road Traffic Collision and Accident. 
+### To determine the factors influening UK Road Traffic Collision and Accident. 
 Since the 1960s, the advancement of infrastructure within the transport industry with regards to the technologies within the cars and the road conditions have been evident. This has positively resulted in downward trend in road traffic collisions and accidents. However, still a substantial number of road traffic accidents do still occur and they can result in serious/fatal consequences. 
 
 #### Data Extraction

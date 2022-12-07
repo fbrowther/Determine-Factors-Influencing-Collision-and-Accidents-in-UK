@@ -42,11 +42,13 @@ After gathering initial requiremments of the data analysis team who will determi
    
 
 # Use case 1 - 
-
 ### Entity Relationship Diagram (ERD)
 The CSV files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
-
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/ERD%20diagram.png)
+
+### Working with Relational database to determine the factors influecing UK road traffic collision and accident
+Since there exist a relationship between the accident and vehicle dataset with ID (accident_index) being common between the two, it was obvious to upload 
+the clean dataset to PostgreSQL which is a relational database. Employing PostgreSQL, database tables 'accident_data' and 'vehicle_data' could be joined (FULL JOIN) at the primary key id and the relationship of traffic collision to 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc could be deteremined.
 
 ### Data Engineering 
 Database 'Accident_db' was created on Postgresql followed by creating two tables namely - Accident and Vehicle with required column names. 
@@ -56,7 +58,7 @@ Using the provided information, we created table schema for each of the cleaned 
 ID (accident_index) was chosen as the primary key for the 'accident_data' table. 
 ID (accident_index) of the multiple vehicle involved in collision was the foreign_key for the 'vehicle_data' table.
 
-# Loading of the data onto Postgresql - 
+### Uploading data onto PostgreSQL - 
 The cleaned dataframe were loaded onto the respective empty tables in Postgresql after establishing connection by creating an engine. The details are included in the Analysisfinal.ipynb file (https://github.com/fbrowther/Project-2/blob/main/AnalysisFinal.ipynb) 
 
 The successful uploading of the data was confirmed by the (SELECT * FROM accident_data/vehicle_data) query and the secreenshots included below display the same-
@@ -67,22 +69,21 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 
 
 # Use case 2 - 
+If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the facors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') strongly influence traffic collision/accident could still be deteremined employing non-relational database MongoDB.
+
+### Data Engineering 
+The cleaned datasets were converted to python dictionary using to_dict('records') function. This converts the pandans dataframe to a dictionary in order to upload the data to MongoDB
+
+Employing pymongo.MongoClient fucntion, a connection to MongoDB compass was established and a database called Accident_db was created. withinin this databse two collections called - 'accident_data' and 'vehicle_data' were created to store the accident_data and vehicle_data dictionaries.
+
+### MongoDB
+MongoDB is a non-relational database to archive data, retrive, manipulate and query data. Employing 'table.insert_many(data_dict)' function the cleaned dictionary was uploaded to the respective collections. The successful loading of the database is shown by these screenshots.
 
 
+![alt text]()
 
-# Data Engineering -
-Accident_db was created on Postgresql followed by creating two tables namely - Accident and Vehicle. 
+![alt text]()
 
-Using the provided information, we created table schema for each of the CSV files followed by specifing their data types, primary keys, foreign keys, and other constraints. The .sql schema file has been attached for your reference. 
-
-# Loading of the data onto Postgresql - 
-We successfully loaded the cleaned dataframe onto the respective empty tables in Postgresql after establishing connection by creating an engine. The details are included in the Analysisfinal.ipynb file (https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/AnalysisFinal.ipynb). 
-
-The successful uploading was confirmed by the (SELECT * FROM accident/vehicle) query and the following secreenshots display the same as follows -
-
-![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/Postgresql%20/Accident.png)
-
-![alt text](https://github.com/hibaaaldubai/Group-1-Project-2/blob/main/Postgresql%20/Vehicle.png)
 
 
 # Conclusions -

@@ -33,10 +33,10 @@ After gathering initial requirements from the data analysis team who will determ
    (d) Unique value counts of columns were determined and 'Not known' & 'Data missing or out of range' were taken out from the data file.
    
    (e) Accident file had (1048575 rows × 34 columns) values and after the cleaning process we had (1026974 rows × 6 columns) value counts.
-       The column names included in the cleaned accident file - id, accident_severity, day_of_week, Speed_Limit, Road_Conditions, and weather_Conditions
+       The column names included in the cleaned accident file are id, accident_severity, day_of_week, Speed_Limit, Road_Conditions, and weather_Conditions
    
    (f) Vehicle file had (2177205 rows × 24 columns) values and after the cleaning process we had (1517856 rows × 6 columns) value counts.
-       The column names included in the cleaned accident file - id, driver_Age, vehicleAge, make, model, driver_sex and Vehicle_Manoeuvre
+       The column names included in the cleaned accident file are id, driver_Age, vehicle_Age, make, model, driver_sex and Vehicle_Manoeuvre
        
    (g) The clean pandas dataframes were uploaded to postgresql (use case 1) and MongoDB (use case 2).
    

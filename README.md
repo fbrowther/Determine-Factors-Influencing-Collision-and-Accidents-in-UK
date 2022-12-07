@@ -50,7 +50,7 @@ Since there exist a relationship between the accident and vehicle dataset with I
 the clean dataset to PostgreSQL which is a relational database. 
 
 ### Data Engineering 
-Database 'Accident_db' was created on Postgresql followed by creating two tables namely - Accident and Vehicle with required column names. 
+Database 'Accident_db' was created in Postgresql followed by creating two tables - Accident and Vehicle with required column names. 
 
 Using the provided information, we created table schema for each of the cleaned CSV files followed by specifing their data types, primary keys, foreign keys, and other constraints. The .sql schema file has been attached for your reference. 
 

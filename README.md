@@ -87,7 +87,7 @@ Employing 'table.insert_many(data_dict)' function the cleaned dictionary was upl
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Mongodb/vehicle_data.png)
 
 # Conclusions -
-As a part of this project, The dataset was successfully extracted, transformed and load the data onto both the relational database, Postgresql and non-relational database MongoDB for further analysis by the Data Analytics team. 
+As a part of this project, project dataset was successfully extracted, transformed and loaded onto both the relational database, Postgresql and non-relational database MongoDB for further analysis by the Data Analytics team. 
 
 
 

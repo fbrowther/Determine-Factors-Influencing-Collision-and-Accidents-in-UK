@@ -1,9 +1,7 @@
 # Project-2
 
-### Aim: 
-This is an ETL project to extract, transformed (cleaned) and load the clean data onto either relational (PostgreSQL) or non-relational database (MongoDB) depending on the use case and the relationship of the data one is working on. 
-
-After loading, the stored database can then be accessed/queried to analyse, derive insights in order to solve the initial business use case successfully. 
+### Brief Introduction
+This is an ETL project. As a part of this project, it is required to extract, transform and load the cleaned data onto a database. Either a relational database such as PostgreSQL or non-relational database (MongoDB) can be chosen depending on the use case and the relationship of the data that exist within this dataset. After loading, the stored database can then be accessed/queried by the relevant personel to analyse and derive insights to solve the business problem successfully. 
 
 ### ETL
 The ETL process of Extraction, Transformation and Loading hence forms an integral part of the entire data pipeline.
@@ -12,7 +10,7 @@ The ETL process of Extraction, Transformation and Loading hence forms an integra
 
 (The current ETL image was sourced from MongoDB.com)
 
-# Objective of the project - 
+# Objective of the project: 
 ### To determine the factors influening the UK Road Traffic Collision and Accident. 
 Owing to the advancement of infrastructure within the transport industry with regards to the technologies within the cars and the road conditions, casualties resulting from the road traffic collision has consistently seen a downward trend (since the 1960s). 
 However, still a substantial number of road traffic collision and accident do occur and they result in serious/fatal consequences. 
@@ -42,7 +40,7 @@ After gathering initial requiremments of the data analysis team who will determi
    (g) The clean pandas dataframes were uploaded to postgresql (use case 1) and MongoDB (use case 2).
    
 
-# Use case 1 - 
+# Use case 1: 
 ### Entity Relationship Diagram (ERD)
 The CSV files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/ERD%20diagram.png)
@@ -69,7 +67,7 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/vehicle_data.png)
 
 
-# Use case 2 - 
+# Use case 2: 
 If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the facors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') strongly influence traffic collision/accident could still be deteremined employing non-relational database MongoDB.
 
 ### Data Engineering 
@@ -87,7 +85,7 @@ Employing 'table.insert_many(data_dict)' function the cleaned dictionary was upl
 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Mongodb/vehicle_data.png)
 
-# Conclusions -
+# Conclusions
 As a part of this project, project dataset was successfully extracted, transformed and loaded onto both the relational database, Postgresql and non-relational database MongoDB for further analysis by the Data Analytics team. 
 
 

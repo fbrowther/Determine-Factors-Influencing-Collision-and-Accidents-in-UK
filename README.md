@@ -23,6 +23,7 @@ The datasets used in this project exceeded the size limit of GitHub, hence could
 
 ### Data transformation
 After gathering initial requirements from the data analysis team who will determining the relationship of the accident to factors such as 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc, the data cleaning process was commenced.
+
    (a) Unneccessary columns that were not part of the data analysis requirement were taken out
    
    (b) The column names of the two data files were simplified and renamed 

@@ -69,7 +69,7 @@ The successful uploading of the data was confirmed by the (SELECT * FROM acciden
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/vehicle_data.png)
 
 ### Data Analysis
-Database tables 'accident_data' and 'vehicle_data' could be joined (FULL JOIN) at the primary key id and the relationship of traffic collision to 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc could be deteremined.
+Database tables 'accident_data' and 'vehicle_data' could be joined (FULL JOIN) at the primary key id and the relationship of traffic collision to 'speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre' etc could be determined.
 
 # Use case 2: 
 If a relationship between the accident and vehicle dataset didnot exist, one can still carry out the data analysis and determine which of the factors ('speed limit', 'weather conditions', 'day of the week', 'road condition', 'vehicle_age', 'driver_age', 'driver_sex' and 'vehicle manoeuvre') influence traffic collision/accident by employing a non-relational database, MongoDB.

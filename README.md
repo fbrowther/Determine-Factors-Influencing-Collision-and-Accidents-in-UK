@@ -62,7 +62,7 @@ ID (accident_index) of the multiple vehicle involved in collision was the foreig
 ### Uploading data onto PostgreSQL - 
 The cleaned dataframe were loaded onto the respective empty tables in Postgresql after establishing connection by creating an engine. The details are included in the Analysisfinal.ipynb file (https://github.com/fbrowther/Project-2/blob/main/AnalysisFinal.ipynb) 
 
-The successful uploading of the data was confirmed by the (SELECT * FROM accident_data/vehicle_data) query and the secreenshots included below display the same-
+The successful uploading of the data was confirmed by the (SELECT * FROM accident_data/vehicle_data) query and the screenshots included below display the same-
 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/Postgresql%20/accident_data.png)
 

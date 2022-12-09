@@ -46,7 +46,7 @@ After gathering initial requirements from the data analysis team who will determ
 The cleaned data files were inspected and ERD diagram of the two datasets were sketched out employing a free online tool (http://www.quickdatabasediagrams.com). 
 ![alt text](https://github.com/fbrowther/Project-2/blob/main/ERD%20diagram.png)
 
-### Working with Relational database to determine the factors influecing UK road traffic collision and accident
+### Working with Relational database to determine the factors influencing UK road traffic collision and accident
 Since there exist a relationship between the accident and vehicle dataset with ID (accident_index) being common between the two, it was obvious to upload 
 the clean dataset to PostgreSQL which is a relational database. 
 

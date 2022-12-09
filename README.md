@@ -80,7 +80,7 @@ The cleaned datasets were converted to python dictionary using to_dict('records'
 Employing pymongo.MongoClient function, a connection to MongoDB compass was established and a database called Accident_db was created. Within this database two collections called - 'accident_data' and 'vehicle_data' were created to store the accident_data and vehicle_data dictionaries.
 
 ### MongoDB
-MongoDB is a non-relational database to archive, retrive, manipulate and query data. A non-relational database is a database that does not use the tabular schema of rows and columns to store data. 
+MongoDB is a non-relational database to archive, retrieve, manipulate and query data. A non-relational database is a database that does not use the tabular schema of rows and columns to store data. 
 
 Employing 'table.insert_many(data_dict)' function the cleaned dictionary was uploaded to the respective collections. The successful loading of the database is shown by these screenshots.
 

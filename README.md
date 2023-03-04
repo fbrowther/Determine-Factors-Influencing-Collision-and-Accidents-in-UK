@@ -1,5 +1,4 @@
-# ETL Project to Determine Factors Influencing Collision and Accidents in UK 
-(for potential insurance premium calculation for individuals)
+# ETL Project - Determine Factors Influencing Collision and Accidents in UK 
 
 ### Brief Introduction
 This is an ETL project. As a part of this project, I was required to extract, transform and load the cleaned data onto a database. Either a relational database such as PostgreSQL or non-relational database (MongoDB) can be chosen depending on the use case and the relationship of the data that exist within this dataset. After loading, the stored database can then be accessed and queried to analyse and derive insights to solve the business problem successfully. 
